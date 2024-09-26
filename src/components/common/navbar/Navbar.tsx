@@ -75,14 +75,14 @@ const Navbar = () => {
   return (
     <>
       <header className=" w-full font-montserrat border-2 py-1 lg:py-3 ">
-        <div className=" flex items-center max-w-screen-2xl  mx-auto justify-between ">
-          <div className="flex relative items-center left-10 gap-10">
+        <div className=" flex items-center md:max-w-screen-xl w-11/12  mx-auto justify-between ">
+          <div className="flex relative items-center  gap-10">
             <div>
               <Image src={MainLogo} alt="logo" height={80} width={80} />
             </div>
             <nav className="hidden md:block"> {navMenu(active, setActive)}</nav>
           </div>
-          <div className=" relative right-10 ">
+          <div className=" relative ">
             <ul className=" flex items-center gap-5">
               <li className="text-lg lg:text-2xl">
                 <CiSearch />
